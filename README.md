@@ -23,4 +23,17 @@ ESP32 → MQTT Broker → Raspberry Pi → Google Sheets + LCD + Web Dashboad
 
 ![Architecture](architecture.png)
 
+## Google Sheets Integration
+
+The system stores patient health data in Google Sheets using Google Apps Script.
+
+Steps:
+
+1. Open Google Sheets
+2. Click Extensions → Apps Script
+3. Paste the script from /google_sheets_script/code.gs
+4. Deploy as Web App
+5. Copy the generated URL
+6. Use the URL in the Raspberry Pi program
+
 

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Smart Health Dashboard</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(120deg,#5f9cff,#9b59ff);
+color:white;
+text-align:center;
+}
+
+.card{
+background:white;
+color:black;
+padding:20px;
+width:350px;
+margin:auto;
+border-radius:10px;
+box-shadow:0px 10px 20px rgba(0,0,0,0.3);
+}
+
+select,button{
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:none;
+}
+
+.alert{
+color:red;
+font-weight:bold;
+font-size:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Smart Health Monitoring</h1>
+
+<div class="card">
+
+<form method="POST">
+
+<select name="patient">
+
+{% for p in patients %}
+<option value="{{p}}">{{p}}</option>
+{% endfor %}
+
+</select>
+
+<br>
+
+<button type="submit">View Data</button>
+
+</form>
+
+{% if data %}
+
+<h3>{{data.name}}</h3>
+
+<p>Heart Rate : {{data.heart}} bpm</p>
+<p>Temperature : {{data.temp}} °C</p>
+
+{% if alert %}
+<p class="alert">⚠ HEALTH ALERT</p>
+{% endif %}
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

@@ -36,4 +36,12 @@ Steps:
 5. Copy the generated URL
 6. Use the URL in the Raspberry Pi program
 
+## Features
+
+• Real-time patient monitoring  
+• IoT communication using MQTT  
+• Health data stored in Google Sheets  
+• LCD alert system  
+• Web dashboard monitoring  
+
 

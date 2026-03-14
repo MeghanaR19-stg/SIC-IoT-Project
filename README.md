@@ -21,5 +21,4 @@ Smart Health Monitoring Band using IoT (ESP32 + Raspberry Pi + MQTT + Google She
 
 ESP32 → MQTT Broker → Raspberry Pi → Google Sheets + LCD + Web Dashboard
 
-## Team Members
-(Add your team member names here)
+

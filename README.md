@@ -42,6 +42,6 @@ Steps:
 • IoT communication using MQTT  
 • Health data stored in Google Sheets  
 • LCD alert system  
-• Web dashboard monitoring  
+• Web dashboard monitoring.
 
 
